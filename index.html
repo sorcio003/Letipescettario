@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IL Letipescettario</title>
+  <meta name="description" content="Le nostre ricette di casa: antipasti, primi, secondi, contorni e dolci.">
+  <link rel="icon" href="assets/icons/first_dish.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Nunito:wght@400;600;700;800&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="module" src="js/pages/home.js"></script>
+</head>
+<body>
+  <main id="main" class="container">
+    <section class="home-intro">
+      <div>
+        <p class="eyebrow">Benvenuti in cucina</p>
+        <h1>Cosa cuciniamo oggi?</h1>
+      </div>
+      <form class="search" id="search" action="ricette.html" role="search" autocomplete="off">
+        <div class="search__field">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+          <label for="search-input" class="visually-hidden">Cerca una ricetta</label>
+          <input id="search-input" name="q" type="search" placeholder="Cerca ricette o ingredienti…"
+                 aria-controls="search-results" aria-expanded="false">
+          <button class="btn btn--primary" type="submit">Cerca</button>
+        </div>
+        <ul class="search__results" id="search-results" hidden></ul>
+      </form>
+    </section>
+
+    <section class="hero hero--loading" id="hero" aria-label="Ricetta in evidenza"></section>
+
+    <section class="section" aria-labelledby="categories-title">
+      <div class="section-head">
+        <h2 id="categories-title">Sfoglia per portata</h2>
+      </div>
+      <ul class="category-grid" id="categories"></ul>
+    </section>
+
+    <section class="section carousel" aria-labelledby="carousel-title">
+      <div class="section-head">
+        <div>
+          <h2 id="carousel-title">Dal nostro ricettario</h2>
+          <p>Un assaggio di ogni portata</p>
+        </div>
+        <div class="carousel__controls">
+          <button class="icon-btn" type="button" data-dir="-1" aria-label="Ricette precedenti" aria-controls="carousel-track">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+          </button>
+          <button class="icon-btn" type="button" data-dir="1" aria-label="Ricette successive" aria-controls="carousel-track">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+          </button>
+        </div>
+      </div>
+      <div class="carousel__track" id="carousel-track" tabindex="0" aria-label="Carosello ricette"></div>
+    </section>
+  </main>
+</body>
+</html>

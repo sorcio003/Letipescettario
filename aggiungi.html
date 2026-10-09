@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aggiungi una ricetta · IL Letipescettario</title>
+  <link rel="icon" href="assets/icons/first_dish.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Nunito:wght@400;600;700;800&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="module" src="js/pages/add.js"></script>
+</head>
+<body>
+  <main id="main" class="container">
+    <header class="page-head">
+      <p class="eyebrow">Area riservata</p>
+      <h1 id="editor-title">Aggiungi una ricetta</h1>
+      <p id="editor-intro">Compila il modulo e premi “Pubblica”: la ricetta compare subito sul sito. Finché non la pubblichi, la bozza resta salvata in questo browser.</p>
+    </header>
+
+    <div id="gate"></div>
+
+    <div class="form-layout" id="editor" hidden>
+      <form class="form-card" id="recipe-form" novalidate>
+        <fieldset>
+          <legend>Informazioni</legend>
+          <div class="field">
+            <label for="title">Nome della ricetta *</label>
+            <input class="input" id="title" name="title" placeholder="Es. Spaghetti alla carbonara" required>
+            <small id="id-preview"></small>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="category">Portata *</label>
+              <select class="input" id="category" name="category"></select>
+            </div>
+            <div class="field">
+              <label for="date">Data di aggiunta</label>
+              <input class="input" type="date" id="date" name="date">
+            </div>
+          </div>
+          <div class="field">
+            <label for="description">Descrizione</label>
+            <textarea class="input" id="description" name="description" rows="3" placeholder="Due righe per raccontare il piatto: da dove viene, quando prepararlo…"></textarea>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Caratteristiche</legend>
+          <div class="field-row">
+            <div class="field">
+              <label for="servings">Persone *</label>
+              <input class="input" type="number" id="servings" name="servings" min="1" max="50" value="4">
+            </div>
+            <div class="field">
+              <label for="prepTime">Preparazione (min)</label>
+              <input class="input" type="number" id="prepTime" name="prepTime" min="0" step="5" placeholder="0">
+            </div>
+            <div class="field">
+              <label for="cookTime">Cottura (min)</label>
+              <input class="input" type="number" id="cookTime" name="cookTime" min="0" step="5" placeholder="0">
+            </div>
+            <div class="field">
+              <label for="restTime">Riposo (min)</label>
+              <input class="input" type="number" id="restTime" name="restTime" min="0" step="5" placeholder="0">
+            </div>
+          </div>
+          <div class="field">
+            <span class="field-label" id="difficulty-label">Difficoltà</span>
+            <div class="segmented" role="radiogroup" aria-labelledby="difficulty-label">
+              <label><input type="radio" name="difficulty" value="easy" checked> Facile</label>
+              <label><input type="radio" name="difficulty" value="medium"> Media</label>
+              <label><input type="radio" name="difficulty" value="hard"> Difficile</label>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Foto</legend>
+          <div class="field">
+            <label for="photos">Aggiungi una o più foto</label>
+            <input class="input" type="file" id="photos" accept="image/*" multiple>
+            <small>La prima è la copertina (con <span aria-hidden="true">★</span> scegli un'altra copertina). Le foto vengono ridimensionate e compresse in automatico.</small>
+            <div class="photo-previews" id="photo-previews"></div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Ingredienti</legend>
+          <p class="help">Dosi per il numero di persone indicato sopra. Per “quanto basta” lascia vuota la quantità e scrivi <code>q.b.</code> come unità. Premi Invio per aggiungere una riga.</p>
+          <div class="repeat-list" id="ingredients"></div>
+          <button type="button" class="btn btn--ghost" id="add-ingredient">+ Ingrediente</button>
+        </fieldset>
+
+        <fieldset>
+          <legend>Procedimento</legend>
+          <div class="repeat-list" id="steps"></div>
+          <button type="button" class="btn btn--ghost" id="add-step">+ Passaggio</button>
+        </fieldset>
+
+        <fieldset>
+          <legend>Extra</legend>
+          <div class="field">
+            <label for="notes">Consigli e note</label>
+            <textarea class="input" id="notes" name="notes" rows="2" placeholder="Varianti, trucchi, come conservarla…"></textarea>
+          </div>
+          <div class="field">
+            <label for="tags">Tag</label>
+            <input class="input" id="tags" name="tags" placeholder="veloce, vegetariano, estate">
+            <small>Separati da virgola: aiutano a trovare la ricetta con la ricerca.</small>
+          </div>
+        </fieldset>
+      </form>
+
+      <aside class="output">
+        <div class="form-card">
+          <h2>Pubblicazione</h2>
+          <p class="help" id="publish-help">La ricetta sarà visibile subito a tutti.</p>
+          <button type="button" class="btn btn--primary btn--block" id="save">Pubblica la ricetta</button>
+          <p class="status" id="status" role="status"></p>
+          <div class="output__actions">
+            <a class="btn btn--ghost" id="view-link" hidden>Vedi la ricetta</a>
+            <button type="button" class="btn btn--ghost" id="reset">Svuota il modulo</button>
+            <button type="button" class="btn btn--danger" id="delete" hidden>Elimina la ricetta</button>
+          </div>
+        </div>
+
+        <div class="form-card">
+          <h2>Strumenti</h2>
+          <p class="help">Le ricette di esempio sono quelle in <code>data/recipes.json</code>: vengono aggiunte solo quelle che non ci sono già. La copia di sicurezza contiene i testi di tutte le ricette (senza foto).</p>
+          <div class="output__actions">
+            <button type="button" class="btn btn--ghost" id="import-samples">Importa ricette di esempio</button>
+            <button type="button" class="btn btn--ghost" id="backup">Scarica copia di sicurezza</button>
+          </div>
+          <p class="status" id="tools-status" role="status"></p>
+        </div>
+      </aside>
+    </div>
+
+    <datalist id="units">
+      <option value="g"></option>
+      <option value="kg"></option>
+      <option value="ml"></option>
+      <option value="l"></option>
+      <option value="q.b."></option>
+      <option value="cucchiaio"></option>
+      <option value="cucchiaino"></option>
+      <option value="spicchio"></option>
+      <option value="fetta"></option>
+      <option value="pizzico"></option>
+      <option value="rametto"></option>
+      <option value="foglia"></option>
+      <option value="costa"></option>
+      <option value="bustina"></option>
+      <option value="bicchiere"></option>
+    </datalist>
+  </main>
+</body>
+</html>

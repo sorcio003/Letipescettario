@@ -1,0 +1,383 @@
+[
+  {
+    "id": "tiramisu-classico",
+    "title": "Tiramisù classico",
+    "category": "dessert",
+    "date": "2026-10-08",
+    "description": "Savoiardi inzuppati nel caffè, crema al mascarpone e una spolverata di cacao amaro. Il dolce italiano più amato, senza cottura.",
+    "images": [],
+    "prepTime": 30,
+    "cookTime": 0,
+    "restTime": 240,
+    "difficulty": "medium",
+    "servings": 6,
+    "ingredients": [
+      { "name": "Mascarpone", "qty": 500, "unit": "g" },
+      { "name": "Uova freschissime", "qty": 4, "unit": "" },
+      { "name": "Zucchero", "qty": 100, "unit": "g" },
+      { "name": "Savoiardi", "qty": 300, "unit": "g" },
+      { "name": "Caffè espresso freddo", "qty": 300, "unit": "ml" },
+      { "name": "Cacao amaro in polvere", "qty": null, "unit": "q.b." }
+    ],
+    "steps": [
+      "Prepara il caffè, zuccheralo a piacere e lascialo raffreddare completamente.",
+      "Separa i tuorli dagli albumi. Monta i tuorli con metà dello zucchero finché sono chiari e spumosi, poi incorpora il mascarpone poco alla volta.",
+      "Monta gli albumi a neve ben ferma con lo zucchero rimasto e uniscili alla crema con una spatola, mescolando dal basso verso l'alto per non smontarla.",
+      "Inzuppa velocemente i savoiardi nel caffè (un istante per lato) e disponili in uno strato su una pirofila. Coprili con metà della crema.",
+      "Fai un secondo strato di savoiardi e termina con la crema rimasta. Copri e lascia in frigo per almeno 4 ore. Prima di servire, spolvera con abbondante cacao amaro."
+    ],
+    "notes": "Usa uova freschissime, perché nella crema restano crude. Per un tocco in più aggiungi al caffè un cucchiaio di liquore al caffè o di marsala.",
+    "tags": ["senza cottura", "classico"]
+  },
+  {
+    "id": "spaghetti-alla-carbonara",
+    "title": "Spaghetti alla carbonara",
+    "category": "first_dish",
+    "date": "2026-10-06",
+    "description": "Il grande classico romano: guanciale croccante, tuorli, pecorino e pepe nero. Niente panna, solo una crema setosa che si forma mescolando la pasta fuori dal fuoco.",
+    "images": [],
+    "prepTime": 10,
+    "cookTime": 15,
+    "difficulty": "easy",
+    "servings": 4,
+    "ingredients": [
+      { "name": "Spaghetti", "qty": 320, "unit": "g" },
+      { "name": "Guanciale", "qty": 150, "unit": "g" },
+      { "name": "Tuorli", "qty": 4, "unit": "" },
+      { "name": "Pecorino romano grattugiato", "qty": 60, "unit": "g" },
+      { "name": "Pepe nero", "qty": null, "unit": "q.b." },
+      { "name": "Sale grosso", "qty": null, "unit": "q.b." }
+    ],
+    "steps": [
+      "Metti a bollire abbondante acqua e salala con moderazione: pecorino e guanciale sono già saporiti.",
+      "Taglia il guanciale a listarelle e rosolalo in una padella senza olio a fuoco medio, finché il grasso diventa trasparente e la carne croccante. Spegni il fuoco e tieni da parte.",
+      "In una ciotola sbatti i tuorli con quasi tutto il pecorino e una generosa macinata di pepe, fino a ottenere una crema densa.",
+      "Cuoci gli spaghetti, scolali al dente tenendo da parte un mestolo d'acqua di cottura e versali nella padella con il guanciale. Mescola per insaporire.",
+      "Fuori dal fuoco aggiungi la crema di tuorli e un goccio d'acqua di cottura, mescolando velocemente finché la salsa è cremosa. Servi subito con il pecorino rimasto e altro pepe."
+    ],
+    "notes": "Il segreto è la temperatura: se la padella è troppo calda le uova si rapprendono. Se la crema è troppo densa, allungala con poca acqua di cottura.",
+    "tags": ["veloce", "tradizionale"]
+  },
+  {
+    "id": "pollo-al-limone",
+    "title": "Pollo al limone",
+    "category": "second_dish",
+    "date": "2026-10-02",
+    "description": "Bocconcini di petto di pollo teneri, avvolti da una salsina al limone leggermente cremosa. Pronto in mezz'ora, perfetto per una cena infrasettimanale.",
+    "images": [],
+    "prepTime": 10,
+    "cookTime": 15,
+    "difficulty": "easy",
+    "servings": 4,
+    "ingredients": [
+      { "name": "Petto di pollo", "qty": 600, "unit": "g" },
+      { "name": "Limoni", "qty": 2, "unit": "" },
+      { "name": "Farina 00", "qty": 40, "unit": "g" },
+      { "name": "Burro", "qty": 30, "unit": "g" },
+      { "name": "Olio extravergine d'oliva", "qty": 2, "unit": "cucchiaio" },
+      { "name": "Brodo vegetale", "qty": 100, "unit": "ml" },
+      { "name": "Prezzemolo", "qty": null, "unit": "q.b." },
+      { "name": "Sale e pepe", "qty": null, "unit": "q.b." }
+    ],
+    "steps": [
+      "Taglia il petto di pollo a bocconcini o a fettine sottili e infarinalo leggermente, scuotendo via la farina in eccesso.",
+      "Grattugia la scorza di un limone e spremi il succo di entrambi.",
+      "In una padella ampia scalda olio e burro, aggiungi il pollo e rosolalo a fuoco medio-alto per 5-6 minuti, finché è dorato su tutti i lati. Sala e pepa.",
+      "Versa il succo di limone e il brodo, abbassa la fiamma e cuoci per altri 5 minuti, finché la salsa si addensa e vela la carne.",
+      "Completa con la scorza grattugiata e il prezzemolo tritato e servi subito."
+    ],
+    "notes": "Accompagnalo con riso basmati o con le patate al forno: la salsina al limone è troppo buona per lasciarla nel piatto.",
+    "tags": ["veloce", "leggero"]
+  },
+  {
+    "id": "torta-di-mele-soffice",
+    "title": "Torta di mele soffice",
+    "category": "dessert",
+    "date": "2026-09-30",
+    "description": "Una torta morbida e profumata, piena di mele e con un velo di zucchero caramellato in superficie. Il dolce perfetto per la colazione o la merenda.",
+    "images": [],
+    "prepTime": 20,
+    "cookTime": 45,
+    "difficulty": "easy",
+    "servings": 8,
+    "ingredients": [
+      { "name": "Mele Golden o Renetta", "qty": 3, "unit": "" },
+      { "name": "Farina 00", "qty": 250, "unit": "g" },
+      { "name": "Zucchero", "qty": 150, "unit": "g" },
+      { "name": "Uova", "qty": 3, "unit": "" },
+      { "name": "Burro fuso", "qty": 100, "unit": "g" },
+      { "name": "Latte", "qty": 100, "unit": "ml" },
+      { "name": "Lievito per dolci", "qty": 16, "unit": "g" },
+      { "name": "Limone (scorza e succo)", "qty": 1, "unit": "" },
+      { "name": "Zucchero di canna", "qty": 2, "unit": "cucchiaio" },
+      { "name": "Sale", "qty": 1, "unit": "pizzico" }
+    ],
+    "steps": [
+      "Accendi il forno statico a 180 °C e imburra e infarina uno stampo da 24 cm.",
+      "Sbuccia le mele, tagliale a fettine sottili e irrorale con un po' di succo di limone perché non anneriscano.",
+      "Monta le uova con lo zucchero per 5 minuti, finché il composto è chiaro e gonfio. Aggiungi il burro fuso tiepido, il latte e la scorza di limone grattugiata.",
+      "Incorpora la farina setacciata con il lievito e il pizzico di sale, mescolando dal basso verso l'alto. Unisci due terzi delle mele.",
+      "Versa l'impasto nello stampo, disponi sopra le mele rimaste a raggiera e spolvera con lo zucchero di canna.",
+      "Cuoci per 40-45 minuti e fai la prova stecchino: deve uscire asciutto. Lascia intiepidire prima di sformare."
+    ],
+    "notes": "",
+    "tags": ["colazione", "merenda", "forno"]
+  },
+  {
+    "id": "risotto-ai-funghi-porcini",
+    "title": "Risotto ai funghi porcini",
+    "category": "first_dish",
+    "date": "2026-09-28",
+    "description": "Un risotto autunnale, cremoso e profumato di bosco, mantecato con burro e parmigiano. Ottimo con i porcini freschi, buonissimo anche con quelli secchi.",
+    "images": [],
+    "prepTime": 15,
+    "cookTime": 25,
+    "difficulty": "medium",
+    "servings": 4,
+    "ingredients": [
+      { "name": "Riso Carnaroli", "qty": 320, "unit": "g" },
+      { "name": "Funghi porcini freschi", "qty": 300, "unit": "g" },
+      { "name": "Brodo vegetale", "qty": 1.2, "unit": "l" },
+      { "name": "Scalogno", "qty": 1, "unit": "" },
+      { "name": "Vino bianco secco", "qty": 100, "unit": "ml" },
+      { "name": "Burro", "qty": 40, "unit": "g" },
+      { "name": "Parmigiano grattugiato", "qty": 50, "unit": "g" },
+      { "name": "Olio extravergine d'oliva", "qty": null, "unit": "q.b." },
+      { "name": "Prezzemolo", "qty": null, "unit": "q.b." },
+      { "name": "Sale e pepe", "qty": null, "unit": "q.b." }
+    ],
+    "steps": [
+      "Pulisci i porcini con un panno umido eliminando la terra, poi tagliali a fettine. Tieni il brodo in caldo su un fuoco basso.",
+      "In una padella scalda un filo d'olio e salta i funghi a fuoco vivace per 4-5 minuti con sale e prezzemolo tritato. Tienili da parte.",
+      "In una casseruola soffriggi lo scalogno tritato finemente con un filo d'olio, aggiungi il riso e tostalo per 2 minuti mescolando. Sfuma con il vino bianco.",
+      "Porta a cottura il riso (circa 16-18 minuti) aggiungendo un mestolo di brodo caldo alla volta, solo quando il precedente è stato assorbito. A metà cottura unisci i funghi.",
+      "Spegni il fuoco, aggiungi il burro freddo a pezzetti e il parmigiano e manteca energicamente. Lascia riposare un minuto coperto e servi."
+    ],
+    "notes": "Con i porcini secchi: usane 40 g, ammollali 20 minuti in acqua tiepida e aggiungi al brodo l'acqua d'ammollo filtrata.",
+    "tags": ["autunno", "funghi"]
+  },
+  {
+    "id": "polpette-di-melanzane",
+    "title": "Polpette di melanzane",
+    "category": "appetizer",
+    "date": "2026-09-21",
+    "description": "Morbide dentro e croccanti fuori, con pecorino e basilico. Un antipasto della tradizione del Sud che conquista anche chi dice di non amare le melanzane.",
+    "images": [],
+    "prepTime": 30,
+    "cookTime": 25,
+    "difficulty": "medium",
+    "servings": 4,
+    "ingredients": [
+      { "name": "Melanzane", "qty": 600, "unit": "g" },
+      { "name": "Pangrattato", "qty": 80, "unit": "g" },
+      { "name": "Pecorino grattugiato", "qty": 50, "unit": "g" },
+      { "name": "Uova", "qty": 1, "unit": "" },
+      { "name": "Aglio", "qty": 1, "unit": "spicchio" },
+      { "name": "Basilico fresco", "qty": null, "unit": "q.b." },
+      { "name": "Sale e pepe", "qty": null, "unit": "q.b." },
+      { "name": "Olio di semi per friggere", "qty": null, "unit": "q.b." }
+    ],
+    "steps": [
+      "Sbuccia le melanzane, tagliale a cubetti e lessale in acqua salata per 10 minuti. Scolale e strizzale bene in un canovaccio: devono essere asciutte.",
+      "Tritale grossolanamente e trasferiscile in una ciotola con pangrattato, pecorino, uovo, aglio tritato, basilico spezzettato, sale e pepe. Impasta fino a ottenere un composto compatto; se è troppo morbido aggiungi un cucchiaio di pangrattato.",
+      "Con le mani umide forma delle polpette grandi come una noce e passale nel pangrattato.",
+      "Friggile in abbondante olio caldo (170 °C) per 3-4 minuti, girandole, finché sono dorate. Scolale su carta assorbente e servile tiepide."
+    ],
+    "notes": "Per una versione più leggera cuocile in forno a 200 °C per 20-25 minuti con un filo d'olio, girandole a metà cottura.",
+    "tags": ["vegetariano", "fritto"]
+  },
+  {
+    "id": "salmone-in-crosta-di-pistacchi",
+    "title": "Salmone in crosta di pistacchi",
+    "category": "second_dish",
+    "date": "2026-09-14",
+    "description": "Filetti di salmone con una crosticina croccante di pistacchi e pangrattato, morbidi e succosi all'interno. Elegante ma semplicissimo.",
+    "images": [],
+    "prepTime": 10,
+    "cookTime": 15,
+    "difficulty": "easy",
+    "servings": 2,
+    "ingredients": [
+      { "name": "Filetti di salmone (circa 180 g l'uno)", "qty": 2, "unit": "" },
+      { "name": "Pistacchi sgusciati non salati", "qty": 40, "unit": "g" },
+      { "name": "Pangrattato", "qty": 20, "unit": "g" },
+      { "name": "Limone (scorza e succo)", "qty": 0.5, "unit": "" },
+      { "name": "Olio extravergine d'oliva", "qty": 1, "unit": "cucchiaio" },
+      { "name": "Sale", "qty": null, "unit": "q.b." }
+    ],
+    "steps": [
+      "Accendi il forno a 200 °C. Trita grossolanamente i pistacchi al coltello o con qualche colpo di mixer: devono restare dei pezzetti.",
+      "Mescola i pistacchi con pangrattato, scorza di limone grattugiata, un pizzico di sale e l'olio.",
+      "Disponi i filetti su una teglia rivestita di carta forno con la pelle verso il basso e premi la panatura sulla superficie, formando uno strato compatto.",
+      "Cuoci per 12-15 minuti a seconda dello spessore: il salmone deve restare rosato al centro. Servi con una spruzzata di succo di limone."
+    ],
+    "notes": "",
+    "tags": ["pesce", "forno", "veloce"]
+  },
+  {
+    "id": "patate-al-forno-croccanti",
+    "title": "Patate al forno croccanti",
+    "category": "side_dish",
+    "date": "2026-09-07",
+    "description": "Croccanti fuori e morbide dentro, profumate al rosmarino: il contorno che mette tutti d'accordo. Il trucco è sbollentarle qualche minuto prima di infornarle.",
+    "images": [],
+    "prepTime": 15,
+    "cookTime": 45,
+    "difficulty": "easy",
+    "servings": 4,
+    "ingredients": [
+      { "name": "Patate", "qty": 1, "unit": "kg" },
+      { "name": "Olio extravergine d'oliva", "qty": 4, "unit": "cucchiaio" },
+      { "name": "Rosmarino", "qty": 2, "unit": "rametto" },
+      { "name": "Aglio", "qty": 2, "unit": "spicchio" },
+      { "name": "Sale grosso", "qty": null, "unit": "q.b." },
+      { "name": "Pepe nero", "qty": null, "unit": "q.b." }
+    ],
+    "steps": [
+      "Accendi il forno a 220 °C. Sbuccia le patate e tagliale a spicchi o a tocchetti di dimensioni simili.",
+      "Sbollentale in acqua salata per 5 minuti, poi scolale e lasciale asciugare qualche minuto. Scuoti lo scolapasta: i bordi leggermente sfaldati diventeranno croccanti.",
+      "Trasferiscile in una teglia capiente con olio, aghi di rosmarino, spicchi d'aglio in camicia, sale e pepe. Mescola bene e distribuiscile in un solo strato.",
+      "Cuoci per 40-45 minuti, girandole un paio di volte, finché sono ben dorate."
+    ],
+    "notes": "Non affollare la teglia: se le patate sono sovrapposte cuociono al vapore e non diventano croccanti.",
+    "tags": ["vegetariano", "forno"]
+  },
+  {
+    "id": "bruschette-al-pomodoro",
+    "title": "Bruschette al pomodoro",
+    "category": "appetizer",
+    "date": "2026-09-02",
+    "description": "Il più semplice e profumato degli antipasti: pane casereccio abbrustolito, pomodori maturi, basilico e un filo d'olio buono. Perfette per iniziare una cena tra amici.",
+    "images": [],
+    "prepTime": 15,
+    "cookTime": 5,
+    "difficulty": "easy",
+    "servings": 4,
+    "ingredients": [
+      { "name": "Pane casereccio", "qty": 8, "unit": "fetta" },
+      { "name": "Pomodori maturi", "qty": 400, "unit": "g" },
+      { "name": "Aglio", "qty": 1, "unit": "spicchio" },
+      { "name": "Olio extravergine d'oliva", "qty": 4, "unit": "cucchiaio" },
+      { "name": "Basilico fresco", "qty": null, "unit": "q.b." },
+      { "name": "Sale", "qty": null, "unit": "q.b." }
+    ],
+    "steps": [
+      "Lava i pomodori, elimina i semi e tagliali a cubetti piccoli. Mettili in una ciotola con sale, basilico spezzettato e 2 cucchiai d'olio e lasciali insaporire per 10 minuti.",
+      "Taglia il pane a fette spesse circa 1,5 cm e abbrustoliscile su una griglia o in forno ventilato a 220 °C per 4-5 minuti, finché sono dorate e croccanti.",
+      "Strofina leggermente lo spicchio d'aglio sulle fette ancora calde.",
+      "Distribuisci i pomodori sul pane, completa con l'olio rimasto e servi subito, prima che il pane si ammorbidisca."
+    ],
+    "notes": "Usa pane del giorno prima: assorbe meno il condimento e resta croccante più a lungo.",
+    "tags": ["veloce", "vegetariano", "estate"]
+  },
+  {
+    "id": "lasagne-alla-bolognese",
+    "title": "Lasagne alla bolognese",
+    "category": "first_dish",
+    "date": "2026-08-30",
+    "description": "Strati di sfoglia all'uovo, ragù cotto lentamente e besciamella: il piatto della domenica per eccellenza. Richiede tempo, ma ogni minuto è ripagato.",
+    "images": [],
+    "prepTime": 60,
+    "cookTime": 190,
+    "restTime": 15,
+    "difficulty": "hard",
+    "servings": 6,
+    "ingredients": [
+      { "name": "Sfoglia all'uovo per lasagne", "qty": 500, "unit": "g" },
+      { "name": "Macinato di manzo", "qty": 300, "unit": "g" },
+      { "name": "Macinato di maiale", "qty": 200, "unit": "g" },
+      { "name": "Passata di pomodoro", "qty": 500, "unit": "g" },
+      { "name": "Carota", "qty": 1, "unit": "" },
+      { "name": "Sedano", "qty": 1, "unit": "costa" },
+      { "name": "Cipolla", "qty": 1, "unit": "" },
+      { "name": "Vino rosso", "qty": 150, "unit": "ml" },
+      { "name": "Latte intero (per la besciamella)", "qty": 1, "unit": "l" },
+      { "name": "Burro (per la besciamella)", "qty": 80, "unit": "g" },
+      { "name": "Farina 00 (per la besciamella)", "qty": 80, "unit": "g" },
+      { "name": "Parmigiano grattugiato", "qty": 120, "unit": "g" },
+      { "name": "Noce moscata", "qty": null, "unit": "q.b." },
+      { "name": "Olio extravergine d'oliva", "qty": null, "unit": "q.b." },
+      { "name": "Sale e pepe", "qty": null, "unit": "q.b." }
+    ],
+    "steps": [
+      "Per il ragù: trita finemente cipolla, carota e sedano e falli appassire in una casseruola con un filo d'olio per 10 minuti a fuoco dolce.",
+      "Aggiungi la carne e rosolala a fuoco vivace sgranandola con un cucchiaio. Sfuma con il vino rosso e lascialo evaporare.",
+      "Unisci la passata, regola di sale e pepe, copri lasciando uno spiraglio e cuoci a fuoco bassissimo per almeno 2 ore e mezza, aggiungendo poca acqua calda se si asciuga troppo.",
+      "Per la besciamella: sciogli il burro in un pentolino, aggiungi la farina e mescola per un minuto. Versa il latte caldo a filo sbattendo con una frusta e cuoci finché si addensa; insaporisci con sale e noce moscata.",
+      "In una teglia stendi un velo di besciamella e alterna strati di sfoglia, ragù, besciamella e parmigiano fino a esaurire gli ingredienti. Termina con ragù, besciamella e abbondante parmigiano.",
+      "Cuoci in forno statico a 180 °C per 35-40 minuti, finché la superficie è dorata. Lascia riposare 15 minuti prima di tagliare."
+    ],
+    "notes": "Il ragù è ancora più buono preparato il giorno prima. Le lasagne si possono anche assemblare in anticipo e conservare in frigo, coperte, fino al giorno dopo.",
+    "tags": ["domenica", "forno", "tradizionale"]
+  },
+  {
+    "id": "polpette-al-sugo",
+    "title": "Polpette al sugo",
+    "category": "second_dish",
+    "date": "2026-08-24",
+    "description": "Le polpette della nonna: morbidissime grazie al pane ammollato nel latte e cotte lentamente nel sugo di pomodoro. Con il sugo avanzato ci si condisce la pasta.",
+    "images": [],
+    "prepTime": 25,
+    "cookTime": 40,
+    "difficulty": "medium",
+    "servings": 4,
+    "ingredients": [
+      { "name": "Macinato misto di manzo e maiale", "qty": 500, "unit": "g" },
+      { "name": "Pane raffermo", "qty": 80, "unit": "g" },
+      { "name": "Latte", "qty": 100, "unit": "ml" },
+      { "name": "Uova", "qty": 1, "unit": "" },
+      { "name": "Parmigiano grattugiato", "qty": 50, "unit": "g" },
+      { "name": "Aglio", "qty": 1, "unit": "spicchio" },
+      { "name": "Passata di pomodoro", "qty": 700, "unit": "g" },
+      { "name": "Cipolla", "qty": 0.5, "unit": "" },
+      { "name": "Prezzemolo", "qty": null, "unit": "q.b." },
+      { "name": "Olio extravergine d'oliva", "qty": null, "unit": "q.b." },
+      { "name": "Sale e pepe", "qty": null, "unit": "q.b." }
+    ],
+    "steps": [
+      "Togli la crosta al pane, spezzettalo e lascialo ammorbidire nel latte per 10 minuti, poi strizzalo bene.",
+      "In una ciotola unisci carne, pane strizzato, uovo, parmigiano, prezzemolo, aglio tritato, sale e pepe. Impasta con le mani fino a ottenere un composto omogeneo.",
+      "Con le mani leggermente unte forma delle polpette grandi come una noce.",
+      "In una casseruola ampia fai appassire la cipolla tritata in un filo d'olio, aggiungi la passata, un pizzico di sale e mezzo bicchiere d'acqua e porta a bollore.",
+      "Adagia le polpette nel sugo una alla volta, copri e cuoci a fuoco basso per 30-35 minuti. Nei primi 10 minuti non mescolare: scuoti delicatamente la pentola per non romperle."
+    ],
+    "notes": "Per una crosticina più saporita puoi rosolarle in padella con un filo d'olio prima di metterle nel sugo.",
+    "tags": ["tradizionale", "comfort food"]
+  },
+  {
+    "id": "caponata-siciliana",
+    "title": "Caponata siciliana",
+    "category": "side_dish",
+    "date": "2026-08-18",
+    "description": "Il contorno agrodolce più famoso della Sicilia: melanzane fritte, sedano, olive e capperi in una salsa di pomodoro con aceto e zucchero. Ancora più buona il giorno dopo.",
+    "images": [],
+    "prepTime": 45,
+    "cookTime": 40,
+    "difficulty": "medium",
+    "servings": 6,
+    "ingredients": [
+      { "name": "Melanzane", "qty": 1, "unit": "kg" },
+      { "name": "Sedano", "qty": 2, "unit": "costa" },
+      { "name": "Cipolla", "qty": 1, "unit": "" },
+      { "name": "Passata di pomodoro", "qty": 250, "unit": "g" },
+      { "name": "Olive verdi denocciolate", "qty": 100, "unit": "g" },
+      { "name": "Capperi dissalati", "qty": 30, "unit": "g" },
+      { "name": "Pinoli", "qty": 20, "unit": "g" },
+      { "name": "Aceto di vino bianco", "qty": 60, "unit": "ml" },
+      { "name": "Zucchero", "qty": 30, "unit": "g" },
+      { "name": "Basilico fresco", "qty": null, "unit": "q.b." },
+      { "name": "Olio di semi per friggere", "qty": null, "unit": "q.b." },
+      { "name": "Olio extravergine d'oliva", "qty": null, "unit": "q.b." },
+      { "name": "Sale", "qty": null, "unit": "q.b." }
+    ],
+    "steps": [
+      "Taglia le melanzane a cubetti, cospargile di sale e lasciale spurgare in uno scolapasta per 30 minuti. Sciacquale e asciugale bene.",
+      "Friggi le melanzane in olio di semi ben caldo, poche alla volta, finché sono dorate. Scolale su carta assorbente.",
+      "Sbollenta il sedano a pezzetti per 3 minuti. In una padella ampia fai appassire la cipolla affettata con un filo d'olio extravergine, poi aggiungi sedano, olive, capperi e pinoli e cuoci per 5 minuti.",
+      "Unisci la passata e cuoci per 10 minuti. Aggiungi aceto e zucchero, mescola e lascia evaporare l'aceto per un paio di minuti.",
+      "Incorpora le melanzane fritte e il basilico, mescola delicatamente e cuoci ancora 5 minuti. Lascia raffreddare: la caponata si serve tiepida o a temperatura ambiente."
+    ],
+    "notes": "Riposata in frigo per una notte, i sapori si amalgamano e diventa ancora più buona.",
+    "tags": ["vegetariano", "siciliana", "estate"]
+  }
+]

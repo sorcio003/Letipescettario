@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ricette · IL Letipescettario</title>
+  <link rel="icon" href="assets/icons/first_dish.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Nunito:wght@400;600;700;800&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="module" src="js/pages/recipes.js"></script>
+</head>
+<body>
+  <main id="main" class="container">
+    <header class="page-head">
+      <p class="eyebrow">Il ricettario</p>
+      <h1>Tutte le ricette</h1>
+      <p>Scegli una portata o cerca per nome, ingrediente o parola chiave.</p>
+    </header>
+
+    <div class="toolbar">
+      <div class="chips" id="chips" role="group" aria-label="Filtra per portata"></div>
+      <form class="search" id="filter-form" role="search" autocomplete="off">
+        <div class="search__field">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+          <label for="filter-input" class="visually-hidden">Cerca tra le ricette</label>
+          <input id="filter-input" name="q" type="search" placeholder="Cerca…">
+        </div>
+      </form>
+    </div>
+    <p class="results-summary" id="summary" aria-live="polite"></p>
+
+    <div id="results"></div>
+  </main>
+</body>
+</html>

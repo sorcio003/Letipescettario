@@ -1,0 +1,49 @@
+rules_version = '2';
+
+// Regole di sicurezza di Firestore: sono loro (non il codice del sito) a decidere chi può fare cosa.
+// Da incollare in Console Firebase → Firestore Database → Regole → Pubblica.
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // L'account amministratore. Deve corrispondere a ADMIN_USERNAME e
+    // USERNAME_EMAIL_DOMAIN in js/firebase-config.js.
+    function isAdmin() {
+      return request.auth != null
+        && request.auth.token.email == 'letipesce@letipescettario.example.com';
+    }
+
+    function isOwner(userId) {
+      return request.auth != null && request.auth.uid == userId;
+    }
+
+    // Ricette: le legge chiunque, le scrive solo l'admin.
+    match /recipes/{recipeId} {
+      allow read: if true;
+      allow create, update: if isAdmin()
+        && request.resource.data.title is string
+        && request.resource.data.title.size() > 0
+        && request.resource.data.category in ['appetizer', 'first_dish', 'second_dish', 'side_dish', 'dessert'];
+      allow delete: if isAdmin();
+    }
+
+    // Foto delle ricette (immagini compresse salvate come testo): stesse regole delle ricette.
+    match /photos/{photoId} {
+      allow read: if true;
+      allow create, update: if isAdmin()
+        && request.resource.data.keys().hasOnly(['data', 'recipeId', 'kind'])
+        && request.resource.data.data is string
+        && request.resource.data.data.size() < 1000000;
+      allow delete: if isAdmin();
+    }
+
+    // Profili: ognuno legge e modifica solo il proprio (nome utente e preferiti).
+    match /users/{userId} {
+      allow read, delete: if isOwner(userId);
+      allow create, update: if isOwner(userId)
+        && request.resource.data.keys().hasOnly(['username', 'favorites', 'createdAt'])
+        && request.resource.data.username == request.auth.token.email.split('@')[0]
+        && request.resource.data.favorites is list
+        && request.resource.data.favorites.size() <= 1000;
+    }
+  }
+}
